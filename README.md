@@ -1,5 +1,4 @@
 # Easybank landing page #
-
 ## Descripción :
 Página de 4 secciones hecha con SASS y BEM.  
 
