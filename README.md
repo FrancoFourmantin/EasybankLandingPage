@@ -10,16 +10,16 @@ Solo por el simple hecho de mejorar voy a realizar los desafios con metodologia 
 
 #### EasyBank Landing Page ####
 
-**Dificultad: Intermedia**
+Dificultad: **Intermedia**
 
-https://francofourmantin.github.io/Frontend-Mentor-challenges-HTML5---CSS3---ES6/EasyBank%20Landing%20Page/
+  https://francofourmantin.github.io/Frontend-Mentor-challenges-HTML5---CSS3---ES6/EasyBank%20Landing%20Page/
 
 ---
 
 #### Manage Landing Page #### 
 
-**Dificultad: Intermedia**
+Dificultad: **Intermedia**
 
-https://francofourmantin.github.io/Frontend-Mentor-challenges-HTML5---CSS3---ES6/Manage%20Landing%20Page/
+  https://francofourmantin.github.io/Frontend-Mentor-challenges-HTML5---CSS3---ES6/Manage%20Landing%20Page/
 
 ---
