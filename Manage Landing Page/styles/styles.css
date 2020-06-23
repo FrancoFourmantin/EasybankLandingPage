@@ -162,6 +162,13 @@ body {
 
 .landing {
   width: 100vw;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .landing {
+    height: calc(100vh + 525px);
+  }
 }
 
 .landing__inner {

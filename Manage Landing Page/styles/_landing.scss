@@ -1,10 +1,11 @@
 .landing{
     width: 100vw;
-    // background: url(../images/bg-tablet-pattern.svg) no-repeat;
-    // background-position-x: right;
-    // background-position-y: -20vh;
-    // background-size: contain;
+    overflow: hidden;
 
+    @include md{
+        
+        height: calc(100vh + 525px);
+    }
 
     &__inner{
         @include ajustarAnchoYCentrar();
