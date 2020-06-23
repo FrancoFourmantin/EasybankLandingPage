@@ -1,0 +1,181 @@
+.landing{
+    width: 100vw;
+    // background: url(../images/bg-tablet-pattern.svg) no-repeat;
+    // background-position-x: right;
+    // background-position-y: -20vh;
+    // background-size: contain;
+
+
+    &__inner{
+        @include ajustarAnchoYCentrar();
+        @include lg{
+            @include ajustarAnchoYCentrar(100);
+        }
+
+
+        .header{
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+
+            .navbar{
+                flex-shrink:1;
+                
+                @include lg{
+                    opacity: 1;
+                    position: absolute;
+                    transform: translateY(-100vh);
+                    transition: translate ease-out .5s;
+                    
+                    &--active{
+                        left: 0;
+                        top: 0;    
+                       
+                        width: 100vw;
+                        height: 100vh;
+                        transform: translateY(0vh);
+                        background: rgb(255,255,255);
+                        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.514) 100%);
+                    }
+
+
+
+                    &__item{
+                        padding: 1em;
+                        
+                    }
+                }
+
+                &__list{
+                    display: grid;
+                    grid-template-columns: repeat(5,1fr);
+                    list-style-type: none;
+
+
+                    @include lg{
+                        display: block;
+                        width: 15em;
+                        margin: 0 auto;
+                        text-align: center;
+                        border-radius: 5px;
+                        position: relative;
+                        transform: translateY(-100vh);
+                        background-color: $VaryLightGray;
+                        grid-gap: 1em;
+                        transition: all ease-out .5s;
+                        
+
+                        &--active{
+                            transform: translateY(10vh);
+                        }
+                    }
+                }
+
+
+
+                &__link{
+                    text-decoration: none;
+                    
+                    color: $veryDarkBlue;
+                    font-weight: 700;
+                    transition: ease-in .2s all;
+                    &:hover{
+                        color: $darkGrayishBlue;
+                    }
+                }
+            }
+
+            .button{
+               @include lg{
+                   display: none;
+               } 
+            }
+
+            .overlay{
+                position: relative;
+                display: none;
+                cursor: pointer;
+
+                @include lg{
+                    
+                    display: block;
+
+
+                    &__open{
+
+
+                    }
+
+                    //Ocultamos el boton de close
+                    &__close{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        transform: scaleY(0);
+                    }
+                }
+
+            }
+        }
+
+
+        .hero{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // flex-wrap: nowrap;
+            margin-bottom: 10em;
+            height: 100vh;
+
+            @include lg{
+                flex-direction: column;
+  
+            }
+
+            &__text{
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                width: 50%;
+                justify-content: space-between;   
+                
+
+                
+                @include lg{
+                    width: 100%;
+                    order: 2;
+                    text-align: center;
+                    align-items: center;
+                   
+                }
+            }
+
+            &__title{
+                font-size: 3em;
+                font-weight: bolder;
+                margin-bottom: .6em;
+                
+                @include xl{
+                    font-size: 2.5em;
+                }
+            }
+
+            &__description{
+                margin-bottom: 2em;
+                color: $darkGrayishBlue;
+                width: 20em;
+
+                @include lg{
+                    width: 100%;
+                }
+            }
+
+        }
+
+
+    }
+}

@@ -1,0 +1,67 @@
+.features{
+    width: 100vw;
+    margin-bottom: 10em;
+    
+
+    &__inner{
+        @include ajustarAnchoYCentrar();
+        display: flex;
+
+
+
+        @include lg{
+            flex-direction: column;
+            @include ajustarAnchoYCentrar(100);
+        }
+    }
+
+    &__titles{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10em;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    &__title{
+        font-size: 2.5em;
+        margin-bottom: .5em;
+        width: 80%;
+
+        @include sm{
+            width: 100%;
+        }
+    }
+
+    &__description{
+        width: 60%;
+        line-height: 1.5em;
+        color: $darkGrayishBlue;
+
+        @include sm{
+            width: 100%;
+        }
+    }
+
+    &__cards{
+        display: grid;
+        grid-gap: 5em;
+        flex: 1;
+
+        .card{
+            display: flex;
+            &__item_number{
+                margin-right: 1em;
+            }
+            &__info{
+                display: flex;
+                flex-direction: column;
+            }
+            &__title{
+                    padding-top:.4em;
+                    margin-bottom: 1em;
+            }
+        }
+    }
+}
