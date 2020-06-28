@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Countries</title>
+    <script src="https://kit.fontawesome.com/4bd9282706.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<!-- 
+        - See all countries from the API on the homepage
+        - Search for a country using an `input` field
+        - Filter countries by region
+        - Click on a country to see more detailed information on a separate page
+        - Click through to the border countries on the detail page
+        - Toggle the color scheme between light and dark mode *(optional)* -->
+
+<main class="container">
+    <header class="header">
+        <h1 class="header__title">Where in the world?</h1>
+    
+        <div class="header__darkMode">
+            <i class="fas fa-moon header__darkMode_icon"></i>
+            <span class="header__darkMode_text">Dark Mode</span>
+        </div>
+    </header> 
+
+
+    <section class="search">
+        <div class="search__input_container">
+            <i class="fas fa-search search__input_icon"></i>
+            <input name="name" type="name" class="search__input" placeholder="Search for a country...">
+        </div>
+
+
+        <div class="search__region">
+            <div class="search__region_header">
+                <span data-selected='none' class="search__region_title">Filter by Region</span>
+                <i class="fas fa-sort-up search__region_icon"></i>
+            </div>
+
+            <ul class="search__region_list">
+                <li data-region='africa'   class="search__region_item">Africa</li>
+                <li data-region='americas' class="search__region_item">Americas</li>
+                <li data-region='asia' class="search__region_item">Asia</li>
+                <li data-region='europe' class="search__region_item">Europe</li>
+                <li data-region='oceania' class="search__region_item">Oceania</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <section class="countries">
+        <!-- <article class="country">
+            
+            <img class="country__img" src="https://restcountries.eu/data/arg.svg" alt="">
+            
+            <h3 class="country__name">Germany</h3>
+
+            <ul class="country__list_data">
+                <li class="country__item_data">Population: &nbsp; <span class="country__item_value">81.770.900</span></li>
+                <li class="country__item_data">Region: &nbsp; <span class="country__item_value">Europe</span></li>
+                <li class="country__item_data">Capital: &nbsp; <span class="country__item_value">Berlin</span></li>
+            </ul>
+
+        </article> -->
+    </section>
+
+    <section  data-country='selected'  class="country__details">
+
+            <button class="back"> <i class="fas fa-arrow-left"></i>  BACK</button>
+
+            <article class="country">
+            
+            <img class="country__img" src="https://restcountries.eu/data/arg.svg" alt="">
+            
+            <h3 class="country__name">Germany</h3>
+
+            <ul class="country__list_data">
+                <li class="country__item_data">Native nave: &nbsp; <span class="country__item_value">81.770.900</span></li>
+                <li class="country__item_data">Population: &nbsp; <span class="country__item_value">Europe</span></li>
+                <li class="country__item_data">Region: &nbsp; <span class="country__item_value">Berlin</span></li>
+                <li class="country__item_data">Sub-Region: &nbsp; <span class="country__item_value">81.770.900</span></li>
+                <li class="country__item_data">Capital: &nbsp; <span class="country__item_value">Europe</span></li>
+                <li class="country__item_data">Top Level Domain: &nbsp; <span class="country__item_value">Berlin</span></li>
+                <li class="country__item_data">Currencies: &nbsp; <span class="country__item_value">81.770.900</span></li>
+                <li class="country__item_data">Languages: &nbsp; <span class="country__item_value">Europe</span></li>
+            </ul>
+
+
+            <div class="country__borders">
+                <span class="country__borders_title">Border Countries</span>
+                
+                <a href="#" class="country__borders_link">France</a>
+                <a href="#" class="country__borders_link">France</a>
+                <a href="#" class="country__borders_link">France</a>
+
+
+            </div>
+
+        </article>
+
+        </section>
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+<script src="./js/animations.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
